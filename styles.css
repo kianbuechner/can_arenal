@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #262a26;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.price-box {
+    text-align: center;
+    border: 2px solid #262a26;
+    padding: 1em;
+    margin: 2em 0;
+    background-color: #f9f9f9;
+    font-size: 1.5em;
+    color: #262a26;
+}
+
+.details {
+    padding: 2em;
+}
+
+.details h2, .details h3 {
+    color: #262a26;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details ul li {
+    background: url('checkmark.png') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin: 0.5em 0;
+}
+
+.contact-form {
+    padding: 2em;
+    background-color: #f1f1f1;
+    margin: 2em 0;
+}
+
+.contact-form h2 {
+    color: #262a26;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 0.5em 0 0.2em;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #f1f1f1;
+}
