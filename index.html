@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unterkunft in Ibiza</title>
+    <title>Accommodation in Ibiza</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,50 +20,75 @@
     </header>
 
     <section class="hero-image">
-        <img src="hero.jpeg" alt="Unterkunft in Ibiza">
+        <img src="hero.jpeg" alt="Accommodation in Ibiza">
     </section>
 
     <section class="intro">
-        <h2>Luxuriöse Villa mit Meerblick</h2>
-        <p>Diese atemberaubende Villa bietet einen unvergesslichen Urlaub mit atemberaubendem Blick auf das Mittelmeer. Genießen Sie Komfort und Luxus in einer ruhigen Umgebung.</p>
+        <h2>Luxurious Villa with Sea View</h2>
+        <p>This stunning villa offers an unforgettable vacation with breathtaking views of the Mediterranean Sea. Enjoy comfort and luxury in a tranquil setting.</p>
     </section>
 
     <section class="price-box">
-        <h3>Preis pro Nacht: €500</h3>
+        <h3>Price per Night: €500</h3>
     </section>
 
     <section class="details">
-        <h2>Über die Unterkunft</h2>
-        <p>Diese luxuriöse Villa bietet einen atemberaubenden Blick auf das Meer und liegt in einer ruhigen Gegend von Ibiza. Die Unterkunft verfügt über 4 Schlafzimmer, 3 Bäder, einen großen Pool und einen wunderschönen Garten.</p>
+        <h2>About the Accommodation</h2>
+        <p>This luxurious villa offers a breathtaking view of the sea and is located in a quiet area of Ibiza. The accommodation features 4 bedrooms, 3 bathrooms, a large pool, and a beautiful garden.</p>
         
-        <h3>Ausstattung</h3>
+        <h3>Amenities</h3>
         <ul>
-            <li>WLAN</li>
-            <li>Klimaanlage</li>
-            <li>Voll ausgestattete Küche</li>
-            <li>Privater Pool</li>
-            <li>Meerblick</li>
+            <li>Wi-Fi</li>
+            <li>Air Conditioning</li>
+            <li>Fully Equipped Kitchen</li>
+            <li>Private Pool</li>
+            <li>Sea View</li>
         </ul>
     </section>
 
     <section class="contact-form">
-        <h2>Kontaktieren Sie uns</h2>
+        <h2>Inquire about availability and price</h2>
         <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Absenden</button>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="checkin">Check-In:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-Out:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send</button>
+            </div>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Unterkunft in Ibiza. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Accommodation in Ibiza. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -46,17 +47,24 @@ nav ul li a {
 }
 
 .price-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border: 2px solid #262a26;
-    padding: 1em;
-    margin: 2em 0;
-    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1.5em;
+    margin: 2em auto;
+    background-color: #fff;
     font-size: 1.5em;
     color: #262a26;
+    border-radius: 10px;
+    max-width: 300px; /* Gleiche Breite wie die Formularelemente */
 }
 
 .details {
     padding: 2em;
+    background-color: #fff;
+    margin: 2em 0;
 }
 
 .details h2, .details h3 {
@@ -77,8 +85,11 @@ nav ul li a {
 
 .contact-form {
     padding: 2em;
-    background-color: #f1f1f1;
-    margin: 2em 0;
+    background-color: #fff;
+    margin: 2em auto;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .contact-form h2 {
@@ -86,22 +97,121 @@ nav ul li a {
     text-align: center;
 }
 
-.contact-form form {
+.contact-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.contact-form .form-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex: 1;
+    margin-bottom: 1em;
 }
 
-.contact-form label {
-    margin: 0.5em 0 0.2em;
+.contact-form .form-group:first-child {
+    margin-left: 0;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form .form-group:last-child {
+    margin-right: 0;
+}
+
+.contact-form .form-group label {
+    margin-bottom: 0.5em;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    padding: 0.5em; /* Gleichmäßiges Padding */
+    border: 1px solid #999; /* Dunkelgrauer Rand */
+    border-radius: 5px;
     width: 100%;
+    box-sizing: border-box; /* Sicherstellen, dass das Padding innerhalb der Breite des Elements liegt */
+    color: #999; /* Dunkelgraue Schriftfarbe */
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+    height: 6em; /* Doppelte Größe */
+}
+
+.contact-form .form-group button {
+    background-color: #262a26;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.contact-form .form-group button:hover {
+    background-color: #262a26;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
     background-color: #f1f1f1;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .hero-image img {
+        height: auto;
+    }
+
+    .intro, .price-box, .details, .contact-form {
+        padding: 1em;
+        margin: 1em auto;
+        max-width: 90%;
+    }
+
+    .price-box {
+        font-size: 1.2em;
+        padding: 1em;
+    }
+
+    .contact-form .form-row {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .contact-form .form-group {
+        margin: 0;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        padding: 0.5em; /* Gleichmäßiges Padding */
+        border: 1px solid #999; /* Dunkelgrauer Rand */
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box; /* Sicherstellen, dass das Padding innerhalb der Breite des Elements liegt */
+        color: #999; /* Dunkelgraue Schriftfarbe */
+    }
+
+    .contact-form .form-group button {
+        width: 100%;
+        align-self: center;
+    }
 }
